@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            background: white;
+            padding: 30px;
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px #0002;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #16a34a;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<form action="submit.php" method="POST">
+
+    <h2>Contact Us</h2>
+
+    <input type="text" name="name"
+           placeholder="Your Name" required>
+
+    <input type="email" name="email"
+           placeholder="Your Email" required>
+
+    <input type="text" name="subject"
+           placeholder="Subject" required>
+
+    <textarea name="message"
+              placeholder="Your Message"
+              required></textarea>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
